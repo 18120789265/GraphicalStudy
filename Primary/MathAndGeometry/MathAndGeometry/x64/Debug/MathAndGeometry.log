@@ -1,0 +1,6 @@
+﻿  MathAndGeometry.cpp
+g:\work\project\github\graphicalstudy\primary\mathandgeometry\mathandgeometry\vector3.h(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+g:\work\project\github\graphicalstudy\primary\mathandgeometry\mathandgeometry\vector3.h(94): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+g:\work\project\github\graphicalstudy\primary\mathandgeometry\mathandgeometry\vector3.h(116): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+  MathAndGeometry.vcxproj -> G:\Work\Project\Github\GraphicalStudy\Primary\MathAndGeometry\x64\Debug\MathAndGeometry.exe
+  MathAndGeometry.vcxproj -> G:\Work\Project\Github\GraphicalStudy\Primary\MathAndGeometry\x64\Debug\MathAndGeometry.pdb (Full PDB)
