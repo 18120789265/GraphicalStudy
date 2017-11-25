@@ -145,12 +145,19 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EulerAngle.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="Matrix4x3.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="RotationMatrix.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Vector3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EulerAngle.cpp" />
     <ClCompile Include="MathAndGeometry.cpp" />
+    <ClCompile Include="MathUtil.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
