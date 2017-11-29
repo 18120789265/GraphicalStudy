@@ -9,6 +9,12 @@ void test(int &a);
 void test2();
 void print(intptr_t i);
 
+struct MyStruct {
+	int a = 10;
+	string name;
+};
+MyStruct hehe, heihei, *haha;//直接声明3个MyStruct类型的变量
+
 int main()
 {
 	test2();
@@ -80,10 +86,58 @@ void test2() {
 	int *b = &a;
 	*b = *b * *b;
 	cout << a << endl;*/
-	int a = 1;
-	int *b = &a;
-	int &c = *b;//== int *&c = b;
-	cout << *b;
+	//int a = 1;
+	//int *b = &a;
+	//int &c = *b;//== int *&c = b;
+	//cout << *b;
+	//int a = 1;
+	//int* const b = &a;
+	//int c = 2;
+	////*b = c;
+	//cout << b << endl;
+	//cout << *b << endl;
+	//int *d = &a;
+	//d = &c;
+	//int a = 1;
+	//int *b = &a;//此时b的值为a的地址，*b为a的值
+	////b = 5;    //不能将int赋值给int*
+	//*b = 6;     //a的值被改变了
+	//cout << b << endl;
+	//cout << *b << endl;
+	//int c = 2;
+	////b = &c;//b被指向c
+	//*b = c;//a的值被修改乘c = 2
+	//*b = 3;
+	//cout << b << endl;
+	//cout << *b << endl;
+	//cout << c << endl;
+	//constexper常量表达式
+	//constexpr int a = 10;//a是一个常量
+	//constexpr int a = test3();//只有当test3函数被constexper修饰时a才是一个常量
+	//int null = 0, *p = &null;
+	//类型别名
+	//typedef int stone;//为int取别名stone
+	//stone a = 10;//a实际是int类型
+	//typedef int* stone2;//也可以为指针类型取别名
+	//stone2 b = &a;//
+	//using stone = int;//第二种取别名的方式
+	//using stone2 = int*;
+	//auto类型说明符
+	//int a = 1;
+	//auto b = a;//自动识别，b为int
+	//char c = '1';
+	//auto d = c;//自动识别，d为char
+	//int a = 1;//int
+	//const auto &b = a;//const int
+	//auto *c = &a;//int*
+	//const int d = a;//const int
+	//decltype类型指示符
+	//int a = 1;
+	//decltype(a) b = 2;//在运行时用a的类型去初始化b
+	MyStruct a;
+	a.a = 1;
+	a.name = "stone";
+	cout << hehe.a << endl;
 }
 
 //引用传参
@@ -94,7 +148,6 @@ void test(int &a) {
 void test3(int *a) {
 	*a = 3;
 }
-
 
 //带换行的输出
 void print(intptr_t i) {
