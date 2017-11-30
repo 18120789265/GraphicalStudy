@@ -2,10 +2,11 @@
 //
 #include "stdafx.h"
 #include <math.h>
+#include <string>
+#include <vector>
 using namespace std;
 
-void test3(int *a);
-void test(int &a);
+void test3();
 void test2();
 void print(intptr_t i);
 
@@ -17,10 +18,36 @@ MyStruct hehe, heihei, *haha;//直接声明3个MyStruct类型的变量
 
 int main()
 {
-	test2();
+	//test2();
+	test3();
 	system("pause");
     return 0;
 }
+
+//第三章 字符串，向量，数组
+void test3() {
+	//字符串
+	//string s("hehe");
+	/*string s1 = "hehe";
+	string s2(10, 'a');
+	cout << s[1] << endl;*/
+	/*for (auto c : s) {
+		cout << c << endl;
+	}*/
+	/*for (auto &c : s) {
+		c = 'a';
+	}
+	cout << s << endl;*/
+	/*for (decltype(s.size()) index = 0;
+		index != s.size() && !isspace(s[index]); ++index)
+		s[index] = toupper(s[index]);
+	cout << s << endl;*/
+	//向量
+	vector<string> v1 = { "1","2" };
+	vector<int> v2{ 1,2,3 };
+}
+
+
 //第二章
 void test2() {
 	/*int i = 10;
@@ -86,8 +113,8 @@ void test2() {
 	int *b = &a;
 	*b = *b * *b;
 	cout << a << endl;*/
-	//int a = 1;
-	//int *b = &a;
+	/*int a = 1;
+	int *b = &a;*/
 	//int &c = *b;//== int *&c = b;
 	//cout << *b;
 	//int a = 1;
@@ -139,16 +166,14 @@ void test2() {
 	a.name = "stone";
 	cout << hehe.a << endl;
 }
-
 //引用传参
-void test(int &a) {
+void test2_1(int &a) {
 	a = 3;
 }
 //指针传参
-void test3(int *a) {
+void test2_2(int *a) {
 	*a = 3;
 }
-
 //带换行的输出
 void print(intptr_t i) {
 	cout << i << endl;
