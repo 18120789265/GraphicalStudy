@@ -43,10 +43,28 @@ void test3() {
 		s[index] = toupper(s[index]);
 	cout << s << endl;*/
 	//向量
-	vector<string> v1 = { "1","2" };
-	vector<int> v2{ 1,2,3 };
+	/*vector<string> v1 = { "1","2" };
+	vector<int> v2{ 1,2,3 };*/
+	//vector<int> vec{1,2,3,4,5,6};
+	/*for (int i = 0; i < vec.size() - 1; i++)
+	{
+		cout << vec[i] + vec[i + 1] << endl;
+	}*/
+	/*for (int i = 0; i < vec.size()/2; i++)
+	{
+		cout << vec[i] + vec[vec.size() - i - 1] << endl;
+	}*/
+	/*auto f = vec.begin();
+	while (f != vec.end()) {
+		*f++ += 2;
+	}
+	cout << vec[3] << endl;*/
+	//int a[test()];
+	int arr[] = { 1,2,3 };
+	for (auto v : arr) {
+		cout << v << endl;
+	}
 }
-
 
 //第二章
 void test2() {
